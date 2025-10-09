@@ -1,0 +1,13 @@
+<p>Название: {{car.car_name}}</p>
+<p>Цена: {{car.price}}$</p>
+<p>Год выпуска: {{car.year}}</p>
+<p>Цвет: {{car.color}}</p>
+<p>Пробег: {{car.mileages}}</p>
+<p>О машине: {{car.description}}</p>
+<p>Дата публикации: {{car.created_data}}</p>
+
+{% if car.image %}
+<p><img src="{{ car.image.url }}" alt=""></p>
+{% else %}
+<p><h1>NO IMAGE</h1></p>
+{% endif %}
